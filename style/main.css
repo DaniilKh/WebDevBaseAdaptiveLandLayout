@@ -3,7 +3,7 @@
     --default-border: 1px solid #474747;
     --header-height: 70px;
     --cover-height: 500px;
-    --project-item_size: 200px;
+    --project-item_size: 400px;
 }
 
 body{
@@ -29,6 +29,8 @@ section {
     height: auto;
 }
 
+/*Navigation*/
+
 .top-menu {
     display: flex;
 }
@@ -40,12 +42,16 @@ section {
     padding: 0 10px 0 10px;
 }
 
+/*Cover*/
+
 .cover {
     height: var(--cover-height);
     line-height: var(--cover-height);
     border: var(--default-border);
     text-align: center;
 }
+
+/*Grid*/
 
 .project-grid {
     padding: 20px 0 20px 0;
@@ -55,15 +61,15 @@ section {
     padding: 5px;
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(var(--project-item_size), 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(var(--project-item_size), 1fr));
 }
 
 .project-grid-item{
     background-color: #3C3B3C;
     position: relative;
     min-width: calc(var(--project-item_size) - 0px);
-    min-height: 400px;
+    min-height: var(--project-item_size);
     border: 0px solid #3C3B3C;
     border-radius: 5px;
     text-align: center;
