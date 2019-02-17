@@ -79,6 +79,10 @@ footer {
     text-align: center;
 }
 
+.cover > img {
+    width: 30rem;
+}
+
 /*Grid*/
 
 .project-grid {
@@ -109,6 +113,11 @@ footer {
 
 .flex-row-last {
     margin-left: auto;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
 }
 
 /* Dev Classes */
