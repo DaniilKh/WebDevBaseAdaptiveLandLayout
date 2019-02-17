@@ -96,9 +96,6 @@ footer {
     background-color: #3C3B3C;
     padding: 130px;
     margin: 10px;
-    /*position: relative;
-    min-width: calc(var(--project-item_size) - 0px);
-    min-height: var(--project-item_size);*/
     border: 0px solid #3C3B3C;
     border-radius: 5px;
     text-align: center;
